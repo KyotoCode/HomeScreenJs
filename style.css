@@ -9,12 +9,12 @@ h1{
     padding-top: 20%;
 }
 .bgMorning{
-    background: url("imorn.jpg");
+    background: url("imgs/imorn.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     
 }.bgNight{
-    background: url("night.jpg");
+    background: url("imgs/night.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
 }
