@@ -1,25 +1,35 @@
 
-var hdate = document.getElementById('time');
-var body = document.querySelector('body');
-var bgM = document.getElementsByClassName('bgMorning');
-var gmGn = document.getElementById("gmgn");
+let hdate = document.getElementById('time');
+let body = document.querySelector('body');
+let bgM = document.getElementsByClassName('bgMorning');
+let gmGn = document.getElementById("gmgn");
 
 //vreme
-var today = new Date();
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-var time = today.getHours() + ":" + today.getMinutes();
+function timeF(){
+let today = new Date();
+let date = today.getFullYear() +'-'+ (today.getMonth()+1)+'-' + today.getDate();
+let time = today.getHours() + ":" + today.getMinutes() + ":";
+let sec = today.getSeconds();
 
-var dateTime = date+' '+time;
+if (sec < 10){
+  sec = '0' + sec;
+}
+  
+let dateTime = date +' '+ time + '' + sec;
 
-console.log(dateTime)
 hdate.textContent = dateTime;
+}
+
+timeF();
+setInterval(timeF,1000);
 
 //slideshow 
-var nowDate = new Date();
-var mgDate = new Date();
+function slides(){
+const nowDate = new Date();
+const mgDate = new Date();
 mgDate.setHours(7);
 
-var ngDate = new Date();
+const ngDate = new Date();
 ngDate.setHours(16);
 
 
@@ -31,3 +41,5 @@ if(mgDate < nowDate && nowDate < ngDate){
     gmGn.textContent = "Good afternoon";
 }
 console.log(nowDate);
+}
+slides();
