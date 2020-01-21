@@ -3,6 +3,10 @@ let hdate = document.getElementById('time');
 let body = document.querySelector('body');
 let bgM = document.getElementsByClassName('bgMorning');
 let gmGn = document.getElementById("gmgn");
+let name = document.getElementById('name');
+
+let nm = prompt('Say my Name.');
+name.textContent = " " + nm;
 
 //vreme
 function timeF(){
