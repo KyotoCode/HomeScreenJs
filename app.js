@@ -5,11 +5,7 @@ let bgM = document.getElementsByClassName('bgMorning');
 let gmGn = document.getElementById("gmgn");
 
 //vreme
-<<<<<<< HEAD
-let tm = function (){
-=======
 function timeF(){
->>>>>>> 09a5909a43eb8abcc69a388b880d2d0346cb329d
 let today = new Date();
 let date = today.getFullYear() +'-'+ (today.getMonth()+1)+'-' + today.getDate();
 let time = today.getHours() + ":" + today.getMinutes() + ":";
@@ -23,19 +19,12 @@ let dateTime = date +' '+ time + '' + sec;
 
 hdate.textContent = dateTime;
 }
-<<<<<<< HEAD
-setInterval(tm,1000);
-
-//slideshow 
-let slides = function(){
-=======
 
 timeF();
 setInterval(timeF,1000);
 
 //slideshow 
 function slides(){
->>>>>>> 09a5909a43eb8abcc69a388b880d2d0346cb329d
 const nowDate = new Date();
 const mgDate = new Date();
 mgDate.setHours(7);
@@ -53,9 +42,4 @@ if(mgDate < nowDate && nowDate < ngDate){
 }
 console.log(nowDate);
 }
-<<<<<<< HEAD
 slides();
-console.log('connected');
-=======
-slides();
->>>>>>> 09a5909a43eb8abcc69a388b880d2d0346cb329d

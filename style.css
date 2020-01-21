@@ -18,3 +18,19 @@ h1{
     background-size: cover; 
     background-repeat: no-repeat;
 }
+@media (max-width: 768px){
+  h1{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .bgNight{
+    background: url("imgs/night.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#hi{
+  padding-top: 70%;
+}
+}
